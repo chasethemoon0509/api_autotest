@@ -4,9 +4,9 @@
 
 每一个接口都将作为一个类来组织。完整的接口继承关系有三层，分别是全局通用的接口类、项目单独的基础接口类、具体到项目中的实际功能接口类。
 
-- BasicApi：封装在 basic 目录下的 basic_api 模块中。主要定义请求数据、参数修改方法、断言方法、请求方法。
-- SystemABasicApi：表示项目 A 的基础接口类，放在 api 包中的 __init__.py 文件中，继承全局接口类 BasicApi，同时定义了添加 token 到请求数据字典中的方法。
-- GetXXXListApi： 表示具体某个功能的接口，继承 SystemABasicApi 类，给父类传请求方法、接口地址。
+- `BasicApi`：封装在 `basic` 目录下的 `basic_api` 模块中。主要定义请求数据、参数修改方法、断言方法、请求方法。
+- `SystemABasicApi`：表示项目 A 的基础接口类，放在 `api` 包中的 `__init__.py` 文件中，继承全局接口类 `BasicApi`，同时定义了添加 `token` 到请求数据字典中的方法。
+- `GetXXXListApi`： 表示具体某个功能的接口，继承 `SystemABasicApi` 类，给父类传请求方法、接口地址。
 
 
 #### 用例
